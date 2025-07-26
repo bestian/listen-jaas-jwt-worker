@@ -50,7 +50,7 @@
 
 ```bash
 git clone <your-repository-url>
-cd vtaiwan-jaas-jwt-worker
+cd listen-jaas-jwt-worker
 ```
 
 ### 2. 安裝依賴
@@ -141,9 +141,7 @@ const ALLOWED_ORIGINS = [
   'http://localhost:8080',
 
   // 生產環境
-  'https://vtaiwan.tw',
-  'https://www.vtaiwan.tw',
-  'https://talk.vtaiwan.tw',
+
 
   // 添加您的網域
   'https://your-domain.com',
@@ -402,13 +400,6 @@ JitsiTokenService.getToken({
 6. **CORS 錯誤**
    - 此 Worker 使用**來源白名單**機制，只允許特定網域存取
    - **預設允許的來源**：
-	  - `https://vtaiwan.pages.dev` (目前的部署點)
-     - `http://localhost:3000` (開發環境)
-     - `http://localhost:3001` (開發環境)
-     - `http://localhost:8080` (開發環境)
-     - `https://vtaiwan.tw`
-     - `https://www.vtaiwan.tw`
-     - `https://talk.vtaiwan.tw`
    - **如果遇到 CORS 錯誤**：
      - 檢查您的網域是否在白名單中
      - 如需添加新的來源，請修改 `src/index.js` 中的 `ALLOWED_ORIGINS` 陣列

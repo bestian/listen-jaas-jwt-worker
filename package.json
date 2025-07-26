@@ -1,5 +1,5 @@
 {
-	"name": "vtaiwan-jaas-jwt-worker",
+	"name": "listen-jaas-jwt-worker",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
